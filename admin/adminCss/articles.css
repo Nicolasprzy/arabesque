@@ -5,21 +5,29 @@
 	padding: 0;
 	margin: 0;
 }
-.essai{
-    display: flex;
-}
 
-/* Style for the editor container */
+
 .container {
-    width: 50vw;
+    max-width: 800px;
     margin: 0 auto;
-    padding-top: 20px;
+    padding: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.form-group button {
+    padding: 10px 20px;
 }
 
-.editor-container {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
 
 /* Style for the editor */
 .editor {
@@ -57,10 +65,10 @@
 /* -------------- */
 
 .sidebar {
-    position: fixed;
+    /* position: fixed;
     left: 0;
-    top: 0;
-    height: 100%;
+    top: 0; 
+   height: 100vh; */
     width: 250px;
     background-color: #333;
     color: #fff;

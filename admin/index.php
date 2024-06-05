@@ -2,6 +2,7 @@
 
 session_start();
 
+
 // Fonction pour vérifier si l'utilisateur est connecté
 function isUserLoggedIn() {
     return isset($_SESSION['user']);
