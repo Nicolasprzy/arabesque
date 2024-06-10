@@ -34,7 +34,7 @@ try {
     $stmt->execute();
 
     // Rediriger l'utilisateur vers une page de succès
-    header('Location: index.php?page=404');
+    header('Location: index.php?page=dashboard-copy');
     exit();
 } catch (PDOException $e) {
     echo "Erreur d'insertion dans la base de données : " . $e->getMessage();

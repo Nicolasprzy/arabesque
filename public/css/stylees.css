@@ -9,6 +9,7 @@ body {
     position: relative;
     background: white;
     transition: background-color .2s ease;
+    scroll-behavior: smooth;
 }
 
 h1, h2 {

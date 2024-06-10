@@ -2,7 +2,7 @@
 session_start();
 
 // Inclusion du fichier de configuration de la base de données
-require_once '../config/database.php';
+// require_once '../config/database.php';
 
 // Fonction pour récupérer les articles depuis la base de données
 function getArticles($pdo) {

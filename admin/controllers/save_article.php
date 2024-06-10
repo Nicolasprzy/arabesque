@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         ]);
 
         // Redirection après succès
-        header('Location: index.php?page=dashboard');
+        header('Location: index.php?page=dashboard-copy');
         exit();
     } catch (PDOException $e) {
         // Erreur de base de données

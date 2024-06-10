@@ -1,0 +1,124 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+
+.container-grid {  display: grid;
+  grid-template-columns: 2fr 10fr 1fr;
+  grid-template-rows: 1fr 2fr 5fr 5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "logo search notification"
+    "header banner banner"
+    "header review_article review_article"
+    "setting stats stats";
+    height: 170vh;
+}
+
+.logo {
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.5px solid #ccc;
+}
+
+.logo img{
+  height: 70px;
+  width: 70px;
+  object-fit: cover;
+}
+
+.search { 
+  grid-area: search; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 0.5px solid #ccc;
+ 
+}
+
+.container input{
+  width: 300px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+}
+
+.notification { 
+  grid-area: notification;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 0.5px solid #ccc;
+}
+
+.header-grid { 
+  grid-area: header; 
+  padding: 100px 0 0 0;
+  
+}
+
+.setting { 
+  grid-area: setting;
+  background-color: darkcyan; 
+}
+
+.banner { 
+  grid-area: banner;
+  background-image: url(../../public/img/banner3.jpeg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 40px;
+}
+
+.imgbanner{
+  transform: translate(0, 50px);
+  padding: 0 20px 0 0;
+}
+
+.imgbanner img{
+  height: 180px;
+  width: 180px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.banner p{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 1.8em;
+  color: #444;
+  margin: 0;
+}
+
+.titleheader{
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 20px 5px;
+}
+
+.banner .subtitle{
+  font-weight: 200;
+  font-size: 1.2em;
+}
+
+.review_article { 
+  grid-area: review_article;
+  display: flex;
+  border: 1px solid rgb(232, 232, 232);
+ 
+}
+
+.stats { 
+  grid-area: stats;
+  background-color: pink; 
+}
+
+.data{
+  display: flex !important;
+  flex-direction: column;
+}
